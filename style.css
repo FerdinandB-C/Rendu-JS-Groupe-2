@@ -1,0 +1,21 @@
+.duck-gif{
+  position: absolute;
+  transition: transform 0.5s ease-out;
+  transform: translate(var(--current-x, 0), var(--current-y, 0));
+}
+
+.flashing {
+  animation: flashing 0.5s ease-in-out infinite;
+}
+
+@keyframes flashing {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
